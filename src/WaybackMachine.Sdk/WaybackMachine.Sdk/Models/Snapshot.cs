@@ -11,6 +11,9 @@ namespace WaybackMachine.Sdk.Models
     {
         [JsonProperty("archived_snapshots")]
         public ArchivedSnapshots ArchivedSnapshots { get; set; }
+
+        [JsonProperty("url")]
+        public string Url { get; set; }
     }
 
     public class ArchivedSnapshots
