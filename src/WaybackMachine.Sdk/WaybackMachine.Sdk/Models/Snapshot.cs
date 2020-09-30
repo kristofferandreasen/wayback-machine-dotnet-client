@@ -4,7 +4,7 @@ using System;
 namespace WaybackMachine.Sdk.Models
 {
     /// <summary>
-    /// Model for the snapshots returned by
+    /// Model for the snapshot returned by
     /// the Wayback Machine API.
     /// </summary>
     public class Snapshot
