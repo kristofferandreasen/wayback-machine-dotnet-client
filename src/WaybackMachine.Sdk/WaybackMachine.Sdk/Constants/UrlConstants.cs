@@ -10,5 +10,10 @@
         /// The base url string for Wayback Machine API.
         /// </summary>
         public const string BaseUrl = "https://web.archive.org/wayback/available?url=";
+
+        /// <summary>
+        /// The timestamp url string used in the Wayback Machine API.
+        /// </summary>
+        public const string TimeStamp = "&timestamp=";
     }
 }
