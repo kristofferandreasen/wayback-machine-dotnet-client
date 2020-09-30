@@ -29,4 +29,4 @@ jobs:
     
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-      working-directory: src/WaybackMachine.Sdk/WaybackMachine.Sdk.Test
+      working-directory: src/WaybackMachine.Sdk.Test
