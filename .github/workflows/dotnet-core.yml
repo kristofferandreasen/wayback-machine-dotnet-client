@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Output Run Number
+      run: echo ${{ github.run_number }}
+      
     - uses: actions/checkout@v2
     
     - name: Setup .NET Core
