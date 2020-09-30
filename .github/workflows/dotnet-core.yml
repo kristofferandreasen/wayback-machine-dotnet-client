@@ -16,6 +16,9 @@ jobs:
       run: echo ${{ github.run_number }}
 
     - uses: actions/checkout@v2
+
+    - name: Fetch Git Details for Semantic Versioning
+    - run: git fetch --prune --unshallow
     
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
