@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaybackMachine.Sdk", "WaybackMachine.Sdk\WaybackMachine.Sdk.csproj", "{CAE86A52-D6F1-4928-BBE7-4DD22016019C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaybackMachine.Sdk.Test", "WaybackMachine.Sdk.Test\WaybackMachine.Sdk.Test.csproj", "{292AA2DD-6927-453F-900D-F4FC29C0928A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaybackMachine.Sdk.Test", "..\WaybackMachine.Sdk.Test\WaybackMachine.Sdk.Test.csproj", "{F837F8B8-258E-4193-B1B0-792A4EAC4C81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{CAE86A52-D6F1-4928-BBE7-4DD22016019C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAE86A52-D6F1-4928-BBE7-4DD22016019C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAE86A52-D6F1-4928-BBE7-4DD22016019C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{292AA2DD-6927-453F-900D-F4FC29C0928A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{292AA2DD-6927-453F-900D-F4FC29C0928A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{292AA2DD-6927-453F-900D-F4FC29C0928A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{292AA2DD-6927-453F-900D-F4FC29C0928A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F837F8B8-258E-4193-B1B0-792A4EAC4C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F837F8B8-258E-4193-B1B0-792A4EAC4C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F837F8B8-258E-4193-B1B0-792A4EAC4C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F837F8B8-258E-4193-B1B0-792A4EAC4C81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
