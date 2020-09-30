@@ -1,4 +1,7 @@
 name: .NET Core
+env:
+  PROJECT_PATH: src/WaybackMachine.Sdk/WaybackMachine.Sdk
+  TEST_PROJECT_PATH: src/WaybackMachine.Sdk.Test
 
 on:
   push:
@@ -8,7 +11,7 @@ on:
 
 jobs:
   build:
-
+    
     runs-on: ubuntu-latest
 
     steps:
@@ -21,12 +24,12 @@ jobs:
     
     - name: Install dependencies
       run: dotnet restore
-      working-directory: src/WaybackMachine.Sdk/WaybackMachine.Sdk
+      working-directory: PROJECT_PATH
     
     - name: Build
       run: dotnet build --configuration Release --no-restore
-      working-directory: src/WaybackMachine.Sdk/WaybackMachine.Sdk
+      working-directory: PROJECT_PATH
     
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-      working-directory: src/WaybackMachine.Sdk.Test
+      working-directory: TEST_PROJECT_PATH
