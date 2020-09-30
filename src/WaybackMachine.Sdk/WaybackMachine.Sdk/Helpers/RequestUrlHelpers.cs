@@ -11,6 +11,15 @@ namespace WaybackMachine.Sdk.Helpers
     public static class RequestUrlHelpers
     {
         /// <summary>
+        /// Construct the request url with
+        /// the needed parameter for the API.
+        /// </summary>
+        /// <param name="url"></param>
+        /// <returns></returns>
+        public static string ConstructRequest(string url)
+        => string.Concat(UrlConstants.UrlExtension, url);
+
+        /// <summary>
         /// Builds the request url used for
         /// getting snapshot close to a specific timestamp.
         /// </summary>

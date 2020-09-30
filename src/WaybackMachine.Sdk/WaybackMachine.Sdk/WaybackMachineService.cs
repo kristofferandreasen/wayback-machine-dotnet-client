@@ -11,7 +11,7 @@ namespace WaybackMachine.Sdk
 {
     public class WaybackMachineService
     {
-        public readonly HttpClient httpClient;
+        public readonly HttpClient httpClient = new HttpClient();
 
         public WaybackMachineService()
         {
@@ -22,7 +22,9 @@ namespace WaybackMachine.Sdk
 
         public async Task<Snapshot> GetMostRecentSnapshotAsync(string url) 
         {
-            HttpResponseMessage response = await httpClient.GetAsync(url);
+            string requestUrl = RequestUrlHelpers.ConstructRequest(url);
+
+            HttpResponseMessage response = await httpClient.GetAsync(requestUrl);
 
             response.EnsureSuccessStatusCode();
 
