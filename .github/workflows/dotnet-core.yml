@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Fetch Git Details for Semantic Versioning
-    - run: git fetch --prune --unshallow
+    - run: git fetch --prune --unshallow --tags
     
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
