@@ -1,7 +1,4 @@
 name: .NET Core
-env:
-  PROJECT_PATH: src/WaybackMachine.Sdk/WaybackMachine.Sdk
-  TEST_PROJECT_PATH: src/WaybackMachine.Sdk.Test
 
 on:
   push:
@@ -24,12 +21,12 @@ jobs:
     
     - name: Install dependencies
       run: dotnet restore
-      working-directory: PROJECT_PATH
+      working-directory: src/WaybackMachine.Sdk/WaybackMachine.Sdk
     
     - name: Build
       run: dotnet build --configuration Release --no-restore
-      working-directory: PROJECT_PATH
+      working-directory: src/WaybackMachine.Sdk/WaybackMachine.Sdk
     
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-      working-directory: TEST_PROJECT_PATH
+      working-directory: src/WaybackMachine.Sdk.Test
