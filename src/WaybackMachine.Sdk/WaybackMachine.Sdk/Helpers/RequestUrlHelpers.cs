@@ -27,6 +27,6 @@ namespace WaybackMachine.Sdk.Helpers
         /// <param name="date"></param>
         /// <returns></returns>
         public static string ConstructRequestWithTimestamp(string url, DateTime date) 
-        => string.Concat(url, UrlConstants.TimeStamp, date.ToWaybackMachineDate());
+        => string.Concat(UrlConstants.UrlExtension, url, UrlConstants.TimeStamp, date.ToWaybackMachineDate());
     }
 }

@@ -17,7 +17,6 @@ namespace WaybackMachine.Sdk
         {
             httpClient.BaseAddress = new Uri(UrlConstants.BaseUrl);
             httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
-            httpClient.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:19.0) Gecko/20100101 Firefox/19.0");
         }
 
         public async Task<Snapshot> GetMostRecentSnapshotAsync(string url) 

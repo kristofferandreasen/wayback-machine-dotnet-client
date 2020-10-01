@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using WaybackMachine.Sdk.Helpers;
 
 namespace WaybackMachine.Sdk.Models
 {
@@ -31,7 +32,8 @@ namespace WaybackMachine.Sdk.Models
         public Uri Url { get; set; }
 
         [JsonProperty("timestamp")]
-        public string Timestamp { get; set; }
+        [JsonConverter(typeof(CustomDateTimeConverter))]
+        public DateTime Timestamp { get; set; }
 
         [JsonProperty("status")]
         public string Status { get; set; }
