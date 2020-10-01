@@ -16,7 +16,7 @@ namespace WaybackMachine.Sdk.Test
         [Fact]
         public async void Returns_snapshot_for_website()
         {
-            Snapshot snapshot = await _waybackMachineService.GetMostRecentSnapshotAsync("shroomi.dk");
+            Snapshot snapshot = await _waybackMachineService.GetMostRecentSnapshotAsync("google.com");
 
             Assert.NotNull(snapshot);
         }
