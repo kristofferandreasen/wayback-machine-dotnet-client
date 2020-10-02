@@ -8,17 +8,8 @@
 
 <br />
 
-[![Wayback Machine](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/workflows/mainworkflow/badge.svg)](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/actions)
-
-[![mainworkflow](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/workflows/mainworkflow/badge.svg)](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/actions)
-
 <div align="center">
-  <!-- NPM version -->
-  <a href="https://www.npmjs.com/package/react-announcement">
-    <img src="https://img.shields.io/npm/v/react-announcement.svg"
-      alt="NPM version" />
-  </a>
-  <!-- Downloads -->
+  [![Wayback Machine](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/workflows/mainworkflow/badge.svg)](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/actions)
   <a href="https://www.npmjs.com/package/react-announcement">
     <img src="https://img.shields.io/npm/dt/react-announcement.svg"
       alt="Downloads" />
