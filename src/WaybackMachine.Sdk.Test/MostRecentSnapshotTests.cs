@@ -26,7 +26,7 @@ namespace WaybackMachine.Sdk.Test
         {
             Snapshot snapshot = await _waybackMachineService.GetMostRecentSnapshotAsync("ieowfjo");
             bool archivedSnapshotExists = snapshot.HasProperty(nameof(ArchivedSnapshots));
-            bool closestSnapshotExists = snapshot.HasProperty(nameof(Closest));
+            bool closestSnapshotExists = snapshot.ArchivedSnapshots.HasProperty(nameof(Closest));
 
             Assert.NotNull(snapshot);
             Assert.True(archivedSnapshotExists);
@@ -38,7 +38,7 @@ namespace WaybackMachine.Sdk.Test
         {
             Snapshot snapshot = await _waybackMachineService.GetMostRecentSnapshotAsync("ieowfjo");
             bool archivedSnapshotExists = snapshot.HasProperty(nameof(ArchivedSnapshots));
-            bool closestSnapshotExists = snapshot.HasProperty(nameof(Closest));
+            bool closestSnapshotExists = snapshot.ArchivedSnapshots.HasProperty(nameof(Closest));
 
             Assert.NotNull(snapshot);
             Assert.True(archivedSnapshotExists);
@@ -50,7 +50,7 @@ namespace WaybackMachine.Sdk.Test
         {
             Snapshot snapshot = await _waybackMachineService.GetMostRecentSnapshotAsync("awdaw-*w//");
             bool archivedSnapshotExists = snapshot.HasProperty(nameof(ArchivedSnapshots));
-            bool closestSnapshotExists = snapshot.HasProperty(nameof(Closest));
+            bool closestSnapshotExists = snapshot.ArchivedSnapshots.HasProperty(nameof(Closest));
 
             Assert.NotNull(snapshot);
             Assert.True(archivedSnapshotExists);

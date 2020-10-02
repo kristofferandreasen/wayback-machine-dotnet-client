@@ -22,7 +22,6 @@ namespace WaybackMachine.Sdk
         public async Task<Snapshot> GetMostRecentSnapshotAsync(string url) 
         {
             string requestUrl = RequestUrlHelpers.ConstructRequest(url);
-
             HttpResponseMessage response = await httpClient.GetAsync(requestUrl);
 
             response.EnsureSuccessStatusCode();
@@ -36,7 +35,6 @@ namespace WaybackMachine.Sdk
         public async Task<Snapshot> GetSnapshotClosestToDateAsync(string url, DateTime date)
         {
             string requestUrl = RequestUrlHelpers.ConstructRequestWithTimestamp(url, date);
-
             HttpResponseMessage response = await httpClient.GetAsync(requestUrl);
 
             response.EnsureSuccessStatusCode();
@@ -49,14 +47,15 @@ namespace WaybackMachine.Sdk
 
         public async Task<bool> HasSnapshot(string url)
         {
-            HttpResponseMessage response = await httpClient.GetAsync(url);
+            string requestUrl = RequestUrlHelpers.ConstructRequest(url);
+            HttpResponseMessage response = await httpClient.GetAsync(requestUrl);
 
             response.EnsureSuccessStatusCode();
 
             string responseString = await response.Content.ReadAsStringAsync();
             Snapshot snapshot = JsonConvert.DeserializeObject<Snapshot>(responseString);
             
-            return ObjectExtensions.HasProperty(snapshot, nameof(ArchivedSnapshots));
+            return snapshot.ArchivedSnapshots.HasProperty(nameof(Closest));
         }
     }
 }

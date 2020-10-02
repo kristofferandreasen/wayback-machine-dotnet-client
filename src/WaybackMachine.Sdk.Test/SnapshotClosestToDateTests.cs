@@ -1,5 +1,4 @@
 using System;
-using WaybackMachine.Sdk.Extensions;
 using WaybackMachine.Sdk.Models;
 using Xunit;
 
@@ -21,6 +20,16 @@ namespace WaybackMachine.Sdk.Test
             Snapshot snapshot = await _waybackMachineService.GetSnapshotClosestToDateAsync("google.com", today);
 
             Assert.NotNull(snapshot);
+        }
+
+        [Fact]
+        public async void Service_returns_snapshot_from_older_date()
+        {
+            DateTime dateTime = new DateTime(2016, 7, 15, 3, 15, 0); 
+            Snapshot snapshot = await _waybackMachineService.GetSnapshotClosestToDateAsync("google.com", dateTime);
+
+            Assert.NotNull(snapshot);
+            Assert.Equal(dateTime.Year, snapshot.ArchivedSnapshots.Closest.Timestamp.Year);
         }
     }
 }
