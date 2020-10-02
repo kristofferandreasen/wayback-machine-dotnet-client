@@ -53,23 +53,43 @@
 
 ## Install
 
-You
+You need to install the NuGet Package to use the library.
 
-## Usage
+### Install with Package Manager
 
-Continue reading for information on usage of the SDK.
+```
+Install-Package WaybackMachineCsharpSdk
+```
 
-### With Dependency Injection
+With version:
+
+```
+Install-Package WaybackMachineCsharpSdk -Version 1.0.0
+```
+
+### Install with .NET CLI
+
+```
+dotnet add package WaybackMachineCsharpSdk
+```
+
+With version:
+
+```
+dotnet add package WaybackMachineCsharpSdk --version 1.0.0
+```
+
+## Using the library
 
 The easiest way to use the library is by using dependency injection.
 In the following sections you can see the easiest ways to use the library.
 
-#### Dependency Injection: .NET Core Web Application
+### Dependency Injection: .NET Core Web Application
 
 * Register the WaybackMachineCsharpSdk interface in the startup file
 * Inject the service in the class where you want to use it
 
-#### Dependency Injection: Azure Function
+### Dependency Injection: Azure Function
 
 The pattern for using dependency injection in an Azure Function is similar to a web application.
 
