@@ -10,6 +10,8 @@
 
 [![Wayback Machine](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/workflows/mainworkflow/badge.svg)](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/actions)
 
+[![mainworkflow](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/workflows/mainworkflow/badge.svg)](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/actions)
+
 <div align="center">
   <!-- NPM version -->
   <a href="https://www.npmjs.com/package/react-announcement">
