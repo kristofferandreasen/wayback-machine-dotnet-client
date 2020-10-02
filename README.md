@@ -51,7 +51,7 @@
   <a href="https://github.com/kristofferandreasen">Kristoffer Andreasen</a>
 </div>
 
-## Install
+## Installation
 
 You need to install the NuGet Package to use the library.
 
@@ -99,27 +99,29 @@ The pattern for using dependency injection in an Azure Function is similar to a 
 
 ## Developing
 
-The project is bootstrapped with [create-react-library](https://github.com/transitive-bullshit/create-react-library) and TypeScript has been added to the project. You can read more about the development workflow in the [project docs](https://github.com/transitive-bullshit/create-react-library).
+The project is developed as a .NET Core Class Library.
+The current framework version used is .NET Core 3.1.
 
-To start developing, you need to open two terminals.
+To start developing, you need to clone the repo on your local workstation.
 
-In the first tab, run from the main directory:
-```
-npm start
-```
-This will activate rollup to watch for any changes to your src directory and build the dist everytime.
+#### Restore Dependencies
 
-In another terminal, navigate to the example folder:
 ```
-cd example
+dotnet restore
 ```
-Then run:
+
+#### Run Project
+
 ```
-npm install
+dotnet run
 ```
-and finally:
+
+#### Test Project
+
+The project is using XUnit for testing.
+
 ```
-npm start
+dotnet test
 ```
 
 This will start up the development server allowing you to see the results.
