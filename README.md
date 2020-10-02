@@ -8,7 +8,7 @@
 
 <br />
 
-[![Wayback Machine](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/workflows/mainworkflow/badge.svg)](https://github.com/AndreSand/BornInApp/actions)
+[![Wayback Machine](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/workflows/mainworkflow/badge.svg)](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/actions)
 
 <div align="center">
   <!-- NPM version -->
