@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>💾 Wayback Machine C# .NET Core SDK 💾</h1>
+  <h2>💾  Wayback Machine C# .NET Core SDK  💾</h2>
 </div>
 <div align="center">
   This API wrapper is built to make it easier to use the Wayback Machine API from Internet Archive.
