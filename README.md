@@ -6,7 +6,18 @@
   It provides a simple interface to get snapshots from websites back in time.
 </div>
 
-[![Wayback Machine](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/workflows/mainworkflow/badge.svg)](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/actions)
+<br />
+
+<div align="center">
+  <a href="https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/actions">
+    <img src="https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/workflows/mainworkflow/badge.svg"
+      alt="Build status" />
+  </a>
+  <a href="https://standardjs.com">
+    <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg"
+      alt="Standard" />
+  </a>
+</div>
 
 <div align="center">
   <h3>
