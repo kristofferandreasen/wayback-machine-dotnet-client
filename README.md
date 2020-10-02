@@ -8,6 +8,8 @@
 
 <br />
 
+[![Wayback Machine](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/workflows/mainworkflow/badge.svg)](https://github.com/AndreSand/BornInApp/actions)
+
 <div align="center">
   <!-- NPM version -->
   <a href="https://www.npmjs.com/package/react-announcement">
@@ -32,15 +34,11 @@
       API Documentation
     </a>
     <span> | </span>
-    <a href="https://www.npmjs.com/package/react-announcement">
+    <a href="https://www.nuget.org/packages/WaybackMachineCsharpSdk/">
       NuGet Package Download
     </a>
     <span> | </span>
-    <a href="https://github.com/kristofferandreasen/react-announcement#properties">
-      Properties
-    </a>
-    <span> | </span>
-    <a href="https://github.com/kristofferandreasen/react-announcement#contributing">
+    <a href="https://github.com/kristofferandreasen/wayback-machine-csharp-sdk#contributing">
       Contributing
     </a>
   </h3>
