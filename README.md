@@ -21,16 +21,16 @@
 
 <div align="center">
   <h3>
-    <a href="https://archive.org/help/wayback_api.php">
-      API Documentation
-    </a>
-    <span> | </span>
     <a href="https://www.nuget.org/packages/WaybackMachineCsharpSdk/">
       NuGet Package Download
     </a>
     <span> | </span>
     <a href="https://github.com/kristofferandreasen/wayback-machine-csharp-sdk#contributing">
       Contributing
+    </a>
+    <span> | </span>
+    <a href="https://archive.org/help/wayback_api.php">
+      API Documentation
     </a>
   </h3>
 </div>
