@@ -1,4 +1,7 @@
 <div align="center">
+  <img 
+    src="https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/blob/master/nuget-images/logo.png?raw=true"  alt="Wayback Machine C# .NET Core SDK/Client"
+  />
   <h1>💾 Wayback Machine C# .NET Core SDK 💾</h1>
 </div>
 <div align="center">
