@@ -6,7 +6,7 @@
     <authors>Kristoffer Andreasen</authors>
     <PackageId>WaybackMachineCsharpSdk</PackageId>
     <PackageTags>WaybackMachine;C#;SDK;DOT NET Core;Rest API</PackageTags>
-    <PackageIconUrl>http://microsoft.com/foo.jpg</PackageIconUrl>
+    <PackageIconUrl>https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/blob/master/nuget-images/logo-small.png?raw=true</PackageIconUrl>
     <Description>
       This C# SDK makes it easier to consume the Wayback Machine Rest API for creating snapshots of websites.
       You get easy methods for creating snapshots or checking if snapshots are available.
