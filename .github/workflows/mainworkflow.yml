@@ -66,8 +66,9 @@ jobs:
       shell: powershell
       run: |
         .\.sonar\scanner\dotnet-sonarscanner begin /k:"kristofferandreasen_wayback-machine-dotnet-client" /o:"kristofferandreasen" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-        dotnet build
+        dotnet build --configuration Release --no-restore
         .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+      working-directory: src/WaybackMachine.DotNet.Client
     
     - name: publish on version change
       id: publish_nuget
