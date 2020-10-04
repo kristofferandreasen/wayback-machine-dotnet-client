@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaybackMachine.DotNet.Client", "WaybackMachine.DotNet.Client\WaybackMachine.DotNet.Client.csproj", "{CAE86A52-D6F1-4928-BBE7-4DD22016019C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaybackMachine.DotNet.Client", "WaybackMachine.DotNet.Client.csproj", "{CAE86A52-D6F1-4928-BBE7-4DD22016019C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaybackMachine.DotNet.Client.Test", "..\WaybackMachine.DotNet.Client.Test\WaybackMachine.DotNet.Client.Test.csproj", "{F837F8B8-258E-4193-B1B0-792A4EAC4C81}"
 EndProject
