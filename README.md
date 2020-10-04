@@ -1,6 +1,6 @@
 <div align="center">
   <img 
-    src="https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/blob/master/nuget-images/logo-small.png?raw=true"  alt="Wayback Machine C# .NET Core SDK/Client"
+    src="https://github.com/kristofferandreasen/wayback-machine-dotnet-client/blob/master/nuget-images/logo-small.png?raw=true"  alt="Wayback Machine C# .NET Core SDK/Client"
   />
   <h1>💾 Wayback Machine C# .NET Core Client 💾</h1>
 </div>
@@ -12,8 +12,8 @@
 <br />
 
 <div align="center">
-  <a href="https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/actions">
-    <img src="https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/workflows/mainworkflow/badge.svg"
+  <a href="https://github.com/kristofferandreasen/wayback-machine-dotnet-client/actions">
+    <img src="https://github.com/kristofferandreasen/wayback-machine-dotnet-client/workflows/mainworkflow/badge.svg"
       alt="Build status" />
   </a>
   <a href="https://standardjs.com">
@@ -28,7 +28,7 @@
       NuGet Package Download
     </a>
     <span> | </span>
-    <a href="https://github.com/kristofferandreasen/wayback-machine-csharp-sdk#contributing">
+    <a href="https://github.com/kristofferandreasen/wayback-machine-dotnet-client#contributing">
       Contributing
     </a>
     <span> | </span>
@@ -123,7 +123,7 @@ In order to see the banner again, you will need to open the localhost link in in
 ## Contributing
 
 Your contributions are always welcome!
-Please have a look at the [contribution guidelines](https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/blob/master/CONTRIBUTING.md) first 🎉
+Please have a look at the [contribution guidelines](https://github.com/kristofferandreasen/wayback-machine-dotnet-client/blob/master/CONTRIBUTING.md) first 🎉
 
 ## License
 
