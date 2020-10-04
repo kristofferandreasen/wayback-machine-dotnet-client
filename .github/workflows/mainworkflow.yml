@@ -27,11 +27,11 @@ jobs:
     
     - name: Install dependencies
       run: dotnet restore
-      working-directory: src/WaybackMachine.DotNet.Client/WaybackMachine.DotNet.Client
+      working-directory: src/WaybackMachine.DotNet.Client
     
     - name: Build
       run: dotnet build --configuration Release --no-restore
-      working-directory: src/WaybackMachine.DotNet.Client/WaybackMachine.DotNet.Client
+      working-directory: src/WaybackMachine.DotNet.Client
     
     - name: Test
       run: dotnet test --no-restore --verbosity normal
@@ -41,6 +41,6 @@ jobs:
       id: publish_nuget
       uses: rohith/publish-nuget@v2
       with:
-        PROJECT_FILE_PATH: src/WaybackMachine.DotNet.Client/WaybackMachine.DotNet.Client/WaybackMachine.DotNet.Client.csproj
+        PROJECT_FILE_PATH: src/WaybackMachine.DotNet.Client/WaybackMachine.DotNet.Client.csproj
         PACKAGE_NAME: WaybackMachine.DotNet.Client
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}
