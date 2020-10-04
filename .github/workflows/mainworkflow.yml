@@ -42,5 +42,5 @@ jobs:
       uses: rohith/publish-nuget@v2
       with:
         PROJECT_FILE_PATH: src/WaybackMachine.DotNet.Client/WaybackMachine.DotNet.Client/WaybackMachine.DotNet.Client.csproj
-        PACKAGE_NAME: WaybackMachineCsharpSdk
+        PACKAGE_NAME: WaybackMachine.DotNet.Client
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}

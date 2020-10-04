@@ -24,7 +24,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://www.nuget.org/packages/WaybackMachineCsharpSdk/">
+    <a href="https://www.nuget.org/packages/WaybackMachine.DotNet.Client/">
       NuGet Package Download
     </a>
     <span> | </span>
@@ -50,25 +50,25 @@ You need to install the NuGet Package to use the library.
 ### Install with Package Manager
 
 ```
-Install-Package WaybackMachineCsharpSdk
+Install-Package WaybackMachine.DotNet.Client
 ```
 
 With version:
 
 ```
-Install-Package WaybackMachineCsharpSdk -Version 1.0.0
+Install-Package WaybackMachine.DotNet.Client -Version 1.0.0
 ```
 
 ### Install with .NET CLI
 
 ```
-dotnet add package WaybackMachineCsharpSdk
+dotnet add package WaybackMachine.DotNet.Client
 ```
 
 With version:
 
 ```
-dotnet add package WaybackMachineCsharpSdk --version 1.0.0
+dotnet add package WaybackMachine.DotNet.Client --version 1.0.0
 ```
 
 ## Using the library
@@ -78,7 +78,7 @@ In the following sections you can see the easiest ways to use the library.
 
 ### Dependency Injection: .NET Core Web Application
 
-* Register the WaybackMachineCsharpSdk interface in the startup file
+* Register the WaybackMachine.DotNet.Client interface in the startup file
 * Inject the service in the class where you want to use it
 
 ### Dependency Injection: Azure Function
@@ -86,7 +86,7 @@ In the following sections you can see the easiest ways to use the library.
 The pattern for using dependency injection in an Azure Function is similar to a web application.
 
 * Create a startup.cs file to enable dependency injection
-* Register the WaybackMachineCsharpSdk interface in the startup file
+* Register the WaybackMachine.DotNet.Client interface in the startup file
 * Inject the service in the class where you want to use it
 
 ## Developing
