@@ -26,11 +26,10 @@ namespace WaybackMachine.DotNet.Client.Test
         {
             Snapshot snapshot = await _waybackMachineService.GetMostRecentSnapshotAsync("ieowfjo");
             bool archivedSnapshotExists = snapshot.HasProperty(nameof(ArchivedSnapshots));
-            bool closestSnapshotExists = snapshot.ArchivedSnapshots.HasProperty(nameof(Closest));
 
             Assert.NotNull(snapshot);
             Assert.True(archivedSnapshotExists);
-            Assert.False(closestSnapshotExists);
+            Assert.Null(snapshot.ArchivedSnapshots.Closest);
         }
 
         [Fact]
@@ -38,11 +37,10 @@ namespace WaybackMachine.DotNet.Client.Test
         {
             Snapshot snapshot = await _waybackMachineService.GetMostRecentSnapshotAsync("ieowfjo");
             bool archivedSnapshotExists = snapshot.HasProperty(nameof(ArchivedSnapshots));
-            bool closestSnapshotExists = snapshot.ArchivedSnapshots.HasProperty(nameof(Closest));
 
             Assert.NotNull(snapshot);
             Assert.True(archivedSnapshotExists);
-            Assert.False(closestSnapshotExists);
+            Assert.Null(snapshot.ArchivedSnapshots.Closest);
         }
 
         [Fact]
@@ -50,11 +48,10 @@ namespace WaybackMachine.DotNet.Client.Test
         {
             Snapshot snapshot = await _waybackMachineService.GetMostRecentSnapshotAsync("awdaw-*w//");
             bool archivedSnapshotExists = snapshot.HasProperty(nameof(ArchivedSnapshots));
-            bool closestSnapshotExists = snapshot.ArchivedSnapshots.HasProperty(nameof(Closest));
 
             Assert.NotNull(snapshot);
             Assert.True(archivedSnapshotExists);
-            Assert.False(closestSnapshotExists);
+            Assert.Null(snapshot.ArchivedSnapshots.Closest);
         }
     }
 }

@@ -55,7 +55,7 @@ namespace WaybackMachine.DotNet.Client
             string responseString = await response.Content.ReadAsStringAsync();
             Snapshot snapshot = JsonConvert.DeserializeObject<Snapshot>(responseString);
             
-            return snapshot.ArchivedSnapshots.HasProperty(nameof(Closest));
+            return snapshot.ArchivedSnapshots.Closest != null;
         }
     }
 }
