@@ -13,6 +13,7 @@
       - Wayback Machine REST API Docs - https://archive.org/help/wayback_api.php
     </Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <ProjectGuid>{E2CEBBAF-6DF7-41E9-815D-6AD4CF90C844}</ProjectGuid>
   </PropertyGroup>
 
   <ItemGroup>
