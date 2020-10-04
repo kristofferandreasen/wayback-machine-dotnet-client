@@ -2,12 +2,12 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using WaybackMachine.Sdk.Constants;
-using WaybackMachine.Sdk.Extensions;
-using WaybackMachine.Sdk.Helpers;
-using WaybackMachine.Sdk.Models;
+using WaybackMachine.DotNet.Client.Constants;
+using WaybackMachine.DotNet.Client.Extensions;
+using WaybackMachine.DotNet.Client.Helpers;
+using WaybackMachine.DotNet.Client.Models;
 
-namespace WaybackMachine.Sdk
+namespace WaybackMachine.DotNet.Client
 {
     public class WaybackMachineService
     {

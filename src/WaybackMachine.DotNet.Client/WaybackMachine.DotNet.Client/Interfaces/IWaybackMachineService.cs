@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
-using WaybackMachine.Sdk.Models;
+using WaybackMachine.DotNet.Client.Models;
 
-namespace WaybackMachine.Sdk.Interfaces
+namespace WaybackMachine.DotNet.Client.Interfaces
 {
     public interface IWaybackMachineService
     {

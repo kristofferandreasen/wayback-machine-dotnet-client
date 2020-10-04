@@ -4,11 +4,11 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Version>1.0.1</Version>
     <authors>Kristoffer Andreasen</authors>
-    <PackageId>WaybackMachineCsharpSdk</PackageId>
-    <PackageTags>WaybackMachine;C#;SDK;Client;DotNet;Core;Rest;API;InternetArchive</PackageTags>
+    <PackageId>WaybackMachine.DotNet.Client</PackageId>
+    <PackageTags>WaybackMachine;C#;Client;DotNet;Core;Rest;API;SDK;InternetArchive</PackageTags>
     <PackageIconUrl>https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/blob/master/nuget-images/logo-small.png?raw=true</PackageIconUrl>
     <Description>
-      This C# SDK makes it easier to consume the Wayback Machine Rest API for creating snapshots of websites. You get easy methods for creating snapshots or checking if snapshots are available.
+      This C# .NET client makes it easier to consume the Wayback Machine Rest API for creating snapshots of websites. You get easy methods for creating snapshots or checking if snapshots are available.
       - Documentation - https://github.com/kristofferandreasen/wayback-machine-csharp-sdk
       - Wayback Machine REST API Docs - https://archive.org/help/wayback_api.php
     </Description>

@@ -1,8 +1,8 @@
 using System;
-using WaybackMachine.Sdk.Constants;
-using WaybackMachine.Sdk.Extensions;
+using WaybackMachine.DotNet.Client.Constants;
+using WaybackMachine.DotNet.Client.Extensions;
 
-namespace WaybackMachine.Sdk.Helpers
+namespace WaybackMachine.DotNet.Client.Helpers
 {
     /// <summary>
     /// Helpers used to construct request

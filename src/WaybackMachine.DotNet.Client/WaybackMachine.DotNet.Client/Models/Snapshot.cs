@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
-using WaybackMachine.Sdk.Helpers;
+using WaybackMachine.DotNet.Client.Helpers;
 
-namespace WaybackMachine.Sdk.Models
+namespace WaybackMachine.DotNet.Client.Models
 {
     /// <summary>
     /// Model for the snapshot returned by

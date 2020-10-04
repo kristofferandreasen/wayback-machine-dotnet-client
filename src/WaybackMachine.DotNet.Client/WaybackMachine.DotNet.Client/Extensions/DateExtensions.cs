@@ -1,7 +1,7 @@
 using System;
-using WaybackMachine.Sdk.Constants;
+using WaybackMachine.DotNet.Client.Constants;
 
-namespace WaybackMachine.Sdk.Extensions
+namespace WaybackMachine.DotNet.Client.Extensions
 {
     /// <summary>
     /// Extension methods for working with dates

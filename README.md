@@ -2,7 +2,7 @@
   <img 
     src="https://github.com/kristofferandreasen/wayback-machine-csharp-sdk/blob/master/nuget-images/logo-small.png?raw=true"  alt="Wayback Machine C# .NET Core SDK/Client"
   />
-  <h1>💾 Wayback Machine C# .NET Core SDK 💾</h1>
+  <h1>💾 Wayback Machine C# .NET Core Client 💾</h1>
 </div>
 <div align="center">
   This API wrapper is built to make it easier to use the Wayback Machine API from Internet Archive.

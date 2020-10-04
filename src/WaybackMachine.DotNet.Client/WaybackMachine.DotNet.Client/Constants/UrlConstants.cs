@@ -1,4 +1,4 @@
-﻿namespace WaybackMachine.Sdk.Constants
+﻿namespace WaybackMachine.DotNet.Client.Constants
 {
     /// <summary>
     /// The base url used to communicate with

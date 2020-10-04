@@ -1,4 +1,4 @@
-namespace WaybackMachine.Sdk.Extensions
+namespace WaybackMachine.DotNet.Client.Extensions
 {
     /// <summary>
     /// Generic extension methods for working with 

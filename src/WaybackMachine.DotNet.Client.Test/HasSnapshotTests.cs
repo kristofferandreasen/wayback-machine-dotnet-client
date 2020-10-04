@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace WaybackMachine.Sdk.Test
+namespace WaybackMachine.DotNet.Client.Test
 {
     public class HasSnapshotTests
     {

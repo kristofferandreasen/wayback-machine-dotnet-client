@@ -1,8 +1,8 @@
-using WaybackMachine.Sdk.Extensions;
-using WaybackMachine.Sdk.Models;
+using WaybackMachine.DotNet.Client.Extensions;
+using WaybackMachine.DotNet.Client.Models;
 using Xunit;
 
-namespace WaybackMachine.Sdk.Test
+namespace WaybackMachine.DotNet.Client.Test
 {
     public class MostRecentSnapshotTests
     {

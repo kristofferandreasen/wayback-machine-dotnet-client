@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/WaybackMachine.Sdk.Test/bin/Debug/netcoreapp3.1/WaybackMachine.Sdk.Test.dll",
+            "program": "${workspaceFolder}/src/WaybackMachine.DotNet.Client.Test/bin/Debug/netcoreapp3.1/WaybackMachine.DotNet.Client.Test.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/src/WaybackMachine.Sdk.Test",
+            "cwd": "${workspaceFolder}/src/WaybackMachine.DotNet.Client.Test",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false

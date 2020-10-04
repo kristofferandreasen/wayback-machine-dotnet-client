@@ -1,4 +1,4 @@
-﻿namespace WaybackMachine.Sdk.Constants
+﻿namespace WaybackMachine.DotNet.Client.Constants
 {
     /// <summary>
     /// Constants for formats used in the API.

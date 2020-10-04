@@ -2,9 +2,9 @@ using System;
 using System.Globalization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
-using WaybackMachine.Sdk.Constants;
+using WaybackMachine.DotNet.Client.Constants;
 
-namespace WaybackMachine.Sdk.Helpers
+namespace WaybackMachine.DotNet.Client.Helpers
 {
     /// <summary>
     /// Custom DateTime JSON serializer/deserializer
