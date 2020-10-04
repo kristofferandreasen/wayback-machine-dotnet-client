@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Output Run Number
@@ -55,12 +55,9 @@ jobs:
     - name: Install SonarCloud scanner
       if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
       shell: powershell
-      run: New-Item -Path .\.sonar\scanner -ItemType Directory
-
-    - name: Install SonarCloud scanner 2
-      if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
-      shell: powershell
-      run: dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
+      run: |
+        New-Item -Path .\.sonar\scanner -ItemType Directory
+        dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
 
     - name: Build and analyze
       env:
