@@ -34,7 +34,7 @@ jobs:
       working-directory: src/WaybackMachine.DotNet.Client
 
     - name: Test
-      run: dotnet test --no-restore --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=\"opencover,lcov\" /p:CoverletOutput=../lcov
+      run: dotnet test --no-restore --verbosity normal /p:CollectCoverage=true
       working-directory: src/WaybackMachine.DotNet.Client.Test
 
     - name: Cache SonarCloud packages
