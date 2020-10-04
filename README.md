@@ -16,9 +16,9 @@
     <img src="https://github.com/kristofferandreasen/wayback-machine-dotnet-client/workflows/mainworkflow/badge.svg"
       alt="Build status" />
   </a>
-  <a href="https://standardjs.com">
-    <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg"
-      alt="Standard" />
+  <a href="https://www.nuget.org/packages/WaybackMachine.DotNet.Client/">
+    <img src="https://img.shields.io/nuget/v/WaybackMachine.DotNet.Client"
+      alt="NuGet Package" />
   </a>
 </div>
 
@@ -33,13 +33,13 @@
     </a>
     <span> | </span>
     <a href="https://archive.org/help/wayback_api.php">
-      API Documentation
+      Wayback Machine API Documentation
     </a>
   </h3>
 </div>
 
 <div align="center">
-  <sub>A simple C# SDK for the Wayback Machine API. Built with ❤︎ by
+  <sub>A simple C# .NET Core rest client for the Wayback Machine API. Built with ❤︎ by
   <a href="https://github.com/kristofferandreasen">Kristoffer Andreasen</a>
 </div>
 
@@ -71,7 +71,7 @@ With version:
 dotnet add package WaybackMachine.DotNet.Client --version 1.0.0
 ```
 
-## Using the library
+## Using the package
 
 The easiest way to use the library is by using dependency injection.
 In the following sections you can see the easiest ways to use the library.
