@@ -4,7 +4,7 @@
     /// The base url used to communicate with
     /// the Wayback Machine API.
     /// </summary>
-    public class UrlConstants
+    public static class UrlConstants
     {
         /// <summary>
         /// The base url string for Wayback Machine API.

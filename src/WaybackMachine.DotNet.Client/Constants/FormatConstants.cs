@@ -3,7 +3,7 @@
     /// <summary>
     /// Constants for formats used in the API.
     /// </summary>
-    public class FormatConstants
+    public static class FormatConstants
     {
         /// <summary>
         /// The datetime format in the Wayback Machine API response.

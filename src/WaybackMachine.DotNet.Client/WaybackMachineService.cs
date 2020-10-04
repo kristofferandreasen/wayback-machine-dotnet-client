@@ -3,7 +3,6 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using WaybackMachine.DotNet.Client.Constants;
-using WaybackMachine.DotNet.Client.Extensions;
 using WaybackMachine.DotNet.Client.Helpers;
 using WaybackMachine.DotNet.Client.Models;
 
