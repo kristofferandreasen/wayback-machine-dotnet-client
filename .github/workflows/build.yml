@@ -51,6 +51,10 @@ jobs:
         New-Item -Path .\.sonar\scanner -ItemType Directory
         dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
 
+    - name: Test
+      run: dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
+      working-directory: src/WaybackMachine.DotNet.Client.Test
+
     - name: Build and analyze
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
@@ -60,10 +64,6 @@ jobs:
         .\.sonar\scanner\dotnet-sonarscanner begin /k:"kristofferandreasen_wayback-machine-csharp-sdk" /o:"kristofferandreasen" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths='"src/WaybackMachine.DotNet.Client.Test/TestResults/coverage.info"'
         dotnet build "src/WaybackMachine.DotNet.Client/WaybackMachine.DotNet.Client.csproj"
         .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
-    
-    - name: Test
-      run: dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutputFormat=lcov
-      working-directory: src/WaybackMachine.DotNet.Client.Test
 
     - name: publish on version change
       id: publish_nuget
