@@ -11,15 +11,20 @@ namespace RazorPages.Example.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
+        private readonly IWaybackMachineService _waybackMachineService;
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public IndexModel(
+            ILogger<IndexModel> logger,
+            IWaybackMachineService waybackMachineService
+        )
         {
             _logger = logger;
+            _waybackMachineService = waybackMachineService;
         }
 
         public void OnGet()
         {
-
+            
         }
     }
 }
