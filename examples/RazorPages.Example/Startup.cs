@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using WaybackMachine.DotNet.Client;
+using WaybackMachine.DotNet.Client.Interfaces;
 
 namespace RazorPages.Example
 {

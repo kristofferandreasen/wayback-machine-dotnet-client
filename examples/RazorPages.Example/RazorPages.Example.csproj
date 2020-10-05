@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="WaybackMachine.DotNet.Client" Version="1.0.1" />
+  </ItemGroup>
+
 </Project>
