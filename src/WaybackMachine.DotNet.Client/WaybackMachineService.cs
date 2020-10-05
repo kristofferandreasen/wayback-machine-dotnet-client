@@ -4,11 +4,12 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using WaybackMachine.DotNet.Client.Constants;
 using WaybackMachine.DotNet.Client.Helpers;
+using WaybackMachine.DotNet.Client.Interfaces;
 using WaybackMachine.DotNet.Client.Models;
 
 namespace WaybackMachine.DotNet.Client
 {
-    public class WaybackMachineService
+    public class WaybackMachineService : IWaybackMachineService
     {
         public readonly HttpClient httpClient = new HttpClient();
 
