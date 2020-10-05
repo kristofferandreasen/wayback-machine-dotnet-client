@@ -20,6 +20,14 @@
     <img src="https://img.shields.io/nuget/v/WaybackMachine.DotNet.Client"
       alt="NuGet Package" />
   </a>
+  <a href="https://github.com/kristofferandreasen/wayback-machine-dotnet-client/issues">
+    <img src="https://img.shields.io/github/issues/kristofferandreasen/wayback-machine-dotnet-client"
+      alt="GitHub Issues" />
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg"
+      alt="MIT License" />
+  </a>
 </div>
 
 <div align="center">
