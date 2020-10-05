@@ -12,13 +12,17 @@
 <br />
 
 <div align="center">
+  <a href="https://www.nuget.org/packages/WaybackMachine.DotNet.Client/">
+    <img src="https://img.shields.io/nuget/v/WaybackMachine.DotNet.Client"
+      alt="NuGet Package" />
+  </a>
   <a href="https://github.com/kristofferandreasen/wayback-machine-dotnet-client/actions">
     <img src="https://github.com/kristofferandreasen/wayback-machine-dotnet-client/workflows/build/badge.svg"
       alt="Build status" />
   </a>
-  <a href="https://www.nuget.org/packages/WaybackMachine.DotNet.Client/">
-    <img src="https://img.shields.io/nuget/v/WaybackMachine.DotNet.Client"
-      alt="NuGet Package" />
+  <a href="https://sonarcloud.io/dashboard?id=kristofferandreasen_wayback-machine-csharp-sdk">
+    <img src="https://sonarcloud.io/api/project_badges/measure?project=kristofferandreasen_wayback-machine-csharp-sdk&metric=alert_status"
+      alt="Sonar Gate" />
   </a>
   <a href="https://github.com/kristofferandreasen/wayback-machine-dotnet-client/issues">
     <img src="https://img.shields.io/github/issues/kristofferandreasen/wayback-machine-dotnet-client"
