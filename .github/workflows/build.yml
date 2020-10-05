@@ -57,7 +57,7 @@ jobs:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       shell: powershell
       run: |
-        .\.sonar\scanner\dotnet-sonarscanner begin /k:"kristofferandreasen_wayback-machine-csharp-sdk" /o:"kristofferandreasen" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
+        .\.sonar\scanner\dotnet-sonarscanner begin /k:"kristofferandreasen_wayback-machine-csharp-sdk" /o:"kristofferandreasen" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths='"src/WaybackMachine.DotNet.Client.Test/TestResults/coverage.info"'
         dotnet build "src/WaybackMachine.DotNet.Client/WaybackMachine.DotNet.Client.csproj"
         .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
     
