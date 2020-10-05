@@ -7,27 +7,33 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using WaybackMachine.DotNet.Client.Interfaces;
 
 namespace Azure.Function.Example
 {
-    public static class GetSnapshotFunction
+    public class GetSnapshotFunction
     {
+        private readonly IWaybackMachineService _waybackMachineService;
+
+        public GetSnapshotFunction(IWaybackMachineService waybackMachineService)
+        {
+            _waybackMachineService = waybackMachineService;
+        }
+
         [FunctionName(nameof(GetSnapshotFunction))]
-        public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
+        public async Task<IActionResult> Run(
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
-            string name = req.Query["name"];
+            string url = req.Query["url"];
 
-            string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-            dynamic data = JsonConvert.DeserializeObject(requestBody);
-            name = name ?? data?.name;
+            var snapshot = await _waybackMachineService.GetMostRecentSnapshotAsync(url);
 
-            return name != null
-                ? (ActionResult)new OkObjectResult($"Hello, {name}")
-                : new BadRequestObjectResult("Please pass a name on the query string or in the request body");
+            return snapshot != null
+                ? (ActionResult)new OkObjectResult(snapshot)
+                : new BadRequestObjectResult("Please pass a url on the query string or in the request body");
         }
     }
 }
