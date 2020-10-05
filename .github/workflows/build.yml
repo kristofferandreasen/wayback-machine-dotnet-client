@@ -62,7 +62,7 @@ jobs:
         .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
     
     - name: Test
-      run: dotnet test --no-build --configuration Release
+      run: dotnet test --no-restore --configuration Release
       working-directory: src/WaybackMachine.DotNet.Client.Test
 
     - name: publish on version change
