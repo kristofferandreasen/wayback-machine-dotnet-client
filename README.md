@@ -13,7 +13,7 @@
 
 <div align="center">
   <a href="https://github.com/kristofferandreasen/wayback-machine-dotnet-client/actions">
-    <img src="https://github.com/kristofferandreasen/wayback-machine-dotnet-client/workflows/mainworkflow/badge.svg"
+    <img src="https://github.com/kristofferandreasen/wayback-machine-dotnet-client/workflows/build/badge.svg"
       alt="Build status" />
   </a>
   <a href="https://www.nuget.org/packages/WaybackMachine.DotNet.Client/">
