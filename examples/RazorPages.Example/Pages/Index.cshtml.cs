@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using WaybackMachine.DotNet.Client.Interfaces;
+using WaybackMachine.DotNet.Client.Models;
 
 namespace RazorPages.Example.Pages
 {
@@ -22,9 +24,11 @@ namespace RazorPages.Example.Pages
             _waybackMachineService = waybackMachineService;
         }
 
-        public void OnGet()
+        public Snapshot Snapshot { get; set; }
+
+        public async Task OnGet()
         {
-            
+            Snapshot = await _waybackMachineService.GetMostRecentSnapshotAsync("google.com");
         }
     }
 }

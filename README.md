@@ -56,7 +56,7 @@ Install-Package WaybackMachine.DotNet.Client
 With version:
 
 ```
-Install-Package WaybackMachine.DotNet.Client -Version 1.0.0
+Install-Package WaybackMachine.DotNet.Client -Version 1.0.2
 ```
 
 ### Install with .NET CLI
@@ -68,7 +68,7 @@ dotnet add package WaybackMachine.DotNet.Client
 With version:
 
 ```
-dotnet add package WaybackMachine.DotNet.Client --version 1.0.0
+dotnet add package WaybackMachine.DotNet.Client --version 1.0.2
 ```
 
 ## Using the package
@@ -81,6 +81,43 @@ In the following sections you can see the easiest ways to use the library.
 * Register the WaybackMachine.DotNet.Client interface in the startup file
 * Inject the service in the class where you want to use it
 
+```
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddRazorPages();
+
+    // Register the wayback machine client
+    services.AddSingleton<IWaybackMachineService, WaybackMachineService>();
+}
+```
+
+```
+namespace RazorPages.Example.Pages
+{
+    public class IndexModel : PageModel
+    {
+        private readonly ILogger<IndexModel> _logger;
+        private readonly IWaybackMachineService _waybackMachineService;
+
+        public IndexModel(
+            ILogger<IndexModel> logger,
+            IWaybackMachineService waybackMachineService
+        )
+        {
+            _logger = logger;
+            _waybackMachineService = waybackMachineService;
+        }
+
+        public Snapshot Snapshot { get; set; }
+
+        public async Task OnGet()
+        {
+            Snapshot = await _waybackMachineService.GetMostRecentSnapshotAsync("google.com");
+        }
+    }
+}
+```
+
 ### Dependency Injection: Azure Function
 
 The pattern for using dependency injection in an Azure Function is similar to a web application.
@@ -88,6 +125,24 @@ The pattern for using dependency injection in an Azure Function is similar to a 
 * Create a startup.cs file to enable dependency injection
 * Register the WaybackMachine.DotNet.Client interface in the startup file
 * Inject the service in the class where you want to use it
+
+```
+[assembly: FunctionsStartup(typeof(Azure.Function.Example.Startup))]
+namespace Azure.Function.Example
+{
+    public class Startup : FunctionsStartup
+    {
+        public override void Configure(IFunctionsHostBuilder builder)
+        {
+            builder.Services.AddHttpClient();
+            builder.Services.AddLogging();
+
+            // Register the wayback machine client
+            builder.Services.AddSingleton<IWaybackMachineService, WaybackMachineService>();
+        }
+    }
+}
+```
 
 ## Developing
 

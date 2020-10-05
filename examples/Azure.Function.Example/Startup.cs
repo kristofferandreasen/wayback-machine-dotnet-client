@@ -14,7 +14,7 @@ namespace Azure.Function.Example
             builder.Services.AddHttpClient();
             builder.Services.AddLogging();
 
-            // Register the wayback machine client for dependency injection
+            // Register the wayback machine client
             builder.Services.AddSingleton<IWaybackMachineService, WaybackMachineService>();
         }
     }
