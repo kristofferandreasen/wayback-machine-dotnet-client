@@ -28,14 +28,6 @@ jobs:
     - name: Install dependencies
       run: dotnet restore
       working-directory: src/WaybackMachine.DotNet.Client
-    
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
-      working-directory: src/WaybackMachine.DotNet.Client
-
-    - name: Test
-      run: dotnet test --no-restore --verbosity normal /p:CollectCoverage=true
-      working-directory: src/WaybackMachine.DotNet.Client.Test
 
     - name: Cache SonarCloud packages
       uses: actions/cache@v1
@@ -69,6 +61,10 @@ jobs:
         dotnet build "src/WaybackMachine.DotNet.Client/WaybackMachine.DotNet.Client.csproj"
         .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
     
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal /p:CollectCoverage=true
+      working-directory: src/WaybackMachine.DotNet.Client.Test
+
     - name: publish on version change
       id: publish_nuget
       uses: rohith/publish-nuget@v2
