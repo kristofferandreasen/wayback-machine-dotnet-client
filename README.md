@@ -80,6 +80,7 @@ In the following sections you can see the easiest ways to use the library.
 
 * Register the WaybackMachine.DotNet.Client interface in the startup file
 * Inject the service in the class where you want to use it
+* [See full example in Example folder](https://github.com/kristofferandreasen/wayback-machine-dotnet-client/tree/master/examples/RazorPages.Example)
 
 ```
 public void ConfigureServices(IServiceCollection services)
@@ -125,6 +126,7 @@ The pattern for using dependency injection in an Azure Function is similar to a 
 * Create a startup.cs file to enable dependency injection
 * Register the WaybackMachine.DotNet.Client interface in the startup file
 * Inject the service in the class where you want to use it
+* [See full example in Example folder](https://github.com/kristofferandreasen/wayback-machine-dotnet-client/tree/master/examples/AzureFunction.Example)
 
 #### Startup.cs file
 
