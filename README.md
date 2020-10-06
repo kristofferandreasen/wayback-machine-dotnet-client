@@ -65,22 +65,10 @@ You need to install the NuGet Package to use the library.
 Install-Package WaybackMachine.DotNet.Client
 ```
 
-With version:
-
-```
-Install-Package WaybackMachine.DotNet.Client -Version 1.0.2
-```
-
 ### Install with .NET CLI
 
 ```
 dotnet add package WaybackMachine.DotNet.Client
-```
-
-With version:
-
-```
-dotnet add package WaybackMachine.DotNet.Client --version 1.0.2
 ```
 
 ## Using the package
@@ -138,6 +126,8 @@ The pattern for using dependency injection in an Azure Function is similar to a 
 * Register the WaybackMachine.DotNet.Client interface in the startup file
 * Inject the service in the class where you want to use it
 
+#### Startup.cs file
+
 ```
 [assembly: FunctionsStartup(typeof(Azure.Function.Example.Startup))]
 namespace Azure.Function.Example
@@ -152,6 +142,35 @@ namespace Azure.Function.Example
             // Register the wayback machine client
             builder.Services.AddSingleton<IWaybackMachineService, WaybackMachineService>();
         }
+    }
+}
+```
+#### GetSnapshotFunction.cs file
+
+```
+public class GetSnapshotFunction
+{
+    private readonly IWaybackMachineService _waybackMachineService;
+
+    public GetSnapshotFunction(IWaybackMachineService waybackMachineService)
+    {
+        _waybackMachineService = waybackMachineService;
+    }
+
+    [FunctionName(nameof(GetSnapshotFunction))]
+    public  async Task<IActionResult> Run(
+        [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
+        ILogger log)
+    {
+        log.LogInformation("C# HTTP trigger function processed a request.");
+
+        string url = req.Query["url"];
+
+        var snapshot = await _waybackMachineService.GetMostRecentSnapshotAsync(url);
+
+        return snapshot != null
+            ? (ActionResult)new OkObjectResult(snapshot)
+            : new BadRequestObjectResult("Please pass a url on the query string or in the request body");
     }
 }
 ```
