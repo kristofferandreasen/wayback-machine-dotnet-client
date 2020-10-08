@@ -58,6 +58,7 @@
 ## Installation
 
 You need to install the NuGet Package to use the library.
+You can use on of the following ways are install it through Visual Studio.
 
 ### Install with Package Manager
 
