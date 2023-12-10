@@ -9,7 +9,7 @@
         /// <summary>
         /// The base url string for Wayback Machine API.
         /// </summary>
-        public const string BaseUrl = "https://web.archive.org/wayback/available/";
+        public const string BaseUrl = "https://archive.org/wayback/available/";
 
         /// <summary>
         /// The parameter needed to specify the url
